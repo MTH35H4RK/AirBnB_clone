@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 
 """
-This module demonstrates beautifully formatted code that passes pycodestyle checks.
+beautifully formatted code that passes pycodestyle checks.
 """
 
 
 class PrettyMe:
     def __init__(self, value):
         self.value = value
-
 
     def display(self):
         print(f"Value: {self.value}")
