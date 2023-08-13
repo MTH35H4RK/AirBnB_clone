@@ -3,17 +3,19 @@
 
 
 class PrettyMe:
-    def __init__(self, value):
-        self.value = value
+	def __init__(self, value):
+	'''init'''
+	self.value = value
 
-    def display(self):
-        print("Value: {self.value}")
+	def display(self):
+	'''display'''
+	print("Value: {self.value}")
 
-
-def main():
-    example_instance = PrettyMe("I am a pretty code!")
-    example_instance.display()
+	def main():
+	'''main'''
+	example_instance = PrettyMe("I am a pretty code!")
+	example_instance.display()
 
 
 if __name__ == "__main__":
-    main()
+	main()
