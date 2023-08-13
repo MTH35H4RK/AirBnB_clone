@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
-"""
-beautifully formatted code that passes pycodestyle checks.
-"""
+'''beautifully formatted code that passes pycodestyle checks.'''
 
 
 class PrettyMe:
@@ -10,7 +7,7 @@ class PrettyMe:
         self.value = value
 
     def display(self):
-        print(f"Value: {self.value}")
+        print("Value: {self.value}")
 
 
 def main():
