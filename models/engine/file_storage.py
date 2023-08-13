@@ -5,7 +5,7 @@ from models.base_model import BaseModel
 
 
 class FileStorage():
-    """"This class is used to perform both serialization and deserialization of JSON files."""
+    """"perform both serialization and deserialization of JSON files."""
     __file_path = "file.json"
     __objects = {}
 
@@ -14,7 +14,7 @@ class FileStorage():
         return self.__objects
 
     def new(self, obj):
-        """"Store the object in the __objects directory with the key as <obj class name>.id."""
+        """"Store object in the __objects with the key <obj class name>.id."""
         self.__objects[f"{type(obj).__name__}.{obj.id}"] = obj
 
     def save(self):
@@ -24,7 +24,7 @@ class FileStorage():
             json.dump(objs, file)
 
     def reload(self):
-        """"Converting  from the JSON file into the __objects dictionary through deserialization."""
+        """"JSON file into the __objects dictionary through deserialization."""
         try:
             with open(FileStorage.__file_path) as file:
                 objs = json.load(file)
