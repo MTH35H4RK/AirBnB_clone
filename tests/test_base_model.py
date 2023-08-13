@@ -9,7 +9,7 @@ from models.base_model import BaseModel
 
 
 class case_testBaseModel(unittest.TestCase):
-    """Unit tests confirming the proper instantiation of BaseModel class."""
+    """unit tests confirming the proper instantiation of BaseModel class."""
 
     def case_testno_args(self):
         self.assertEqual(BaseModel, type(BaseModel()))
