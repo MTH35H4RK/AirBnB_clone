@@ -9,7 +9,7 @@ from models.base_model import BaseModel
 
 
 class case_testBaseModel(unittest.TestCase):
-    """Unit tests aimed at confirming the proper instantiation of the BaseModel class."""
+    """Unit tests confirming the proper instantiation of BaseModel class."""
 
     def case_testno_args(self):
         self.assertEqual(BaseModel, type(BaseModel()))
@@ -78,7 +78,7 @@ class case_testBaseModel(unittest.TestCase):
 
 
 class case_Testsave(unittest.TestCase):
-    """Unit tests intended to assess the functionality of the save method within the BaseModel class."""
+    """assess the functionality of method within the BaseModel."""
 
     @classmethod
     def setUp(self):

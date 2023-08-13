@@ -28,7 +28,7 @@ class FileStorage_Test_init(unittest.TestCase):
 
 
 class FileStorage_methodsofTest(unittest.TestCase):
-    """Unit tests designed to validate the functionality of methods within the FileStorage class."""
+    """Unit tests to validate the functionality methods within FileStorage."""
 
     @classmethod
     def setUp(self):
