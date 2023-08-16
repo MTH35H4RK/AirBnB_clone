@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 """This program is for the console"""
-=======
-"""This is code for the AirBnB console"""
->>>>>>> 0ffc45831a1ee4ae45e2221ec8347d4c9eff9872
 import cmd
 import re
 import json
@@ -45,7 +41,6 @@ def error(args):
 
 
 class HBNBCommand(cmd.Cmd):
-<<<<<<< HEAD
     """Console class"""
     prompt = "(hbnb) "
 
@@ -73,26 +68,6 @@ Usage: help <command>
 
     def emptyline(self):
         """Do nothing when an empty line is entered"""
-=======
-    """This is the Console class"""
-    prompt = "(hbnb) "
-
-    def do_quit(self, arg):
-        """Quit is to Exit the program"""
-        return True
-
-    def do_EOF(self, arg):
-        """This command is to Exit the program with EOF"""
-        print()
-        return True
-
-    def dohelp(self, arg):
-        """This command is to Show help information"""
-        super().dohelp(arg)
-
-    def empty_line(self):
-        """This Do nothing if an empty line was entered"""
->>>>>>> 0ffc45831a1ee4ae45e2221ec8347d4c9eff9872
         pass
 
     def do_create(self, class_name):
