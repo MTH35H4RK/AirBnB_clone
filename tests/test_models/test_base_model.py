@@ -8,13 +8,8 @@ from time import sleep
 from models.base_model import BaseModel
 
 
-<<<<<<< HEAD:tests/test_models/test_base_model.py
 class Test_BaseModel(unittest.TestCase):
     """BaseModel class instantiation unit tests."""
-=======
-class case_testBaseModel(unittest.TestCase):
-    """unit tests confirming the proper instantiation of BaseModel class."""
->>>>>>> 0ffc45831a1ee4ae45e2221ec8347d4c9eff9872:tests/test_base_model.py
 
     def case_no_args(self):
         self.assertEqual(BaseModel, type(BaseModel()))

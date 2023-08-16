@@ -23,7 +23,7 @@ class HBNB_Test__promp(unittest.TestCase):
 
 
 class HBNB_Test__help(unittest.TestCase):
-    """Unit tests for evaluation. help messages of the HBNB command interpreter."""
+    """Unit tests of the HBNB command interpreter."""
 
     def case_quit(self):
         prompt_help = ('Exit the program\n'
@@ -99,7 +99,7 @@ class HBNB_Test__help(unittest.TestCase):
 
 
 class HBNB_Test__quit(unittest.TestCase):
-    """Unit tests for evaluation. exiting from the HBNB command interpreter."""
+    """Unit tests for evaluation. exiting from command interpreter."""
 
     def case_quit(self):
         with patch("sys.stdout", new=StringIO()) as output:
