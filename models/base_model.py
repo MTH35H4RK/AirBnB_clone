@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-# You are viewing the code for the BaseModel class.
+"""Specifies the structure of the BaseModel class."""
 import uuid
 from datetime import datetime
 import models
 
 
 class BaseModel():
-    """The foundational model that serves as the basis for all other models."""
+    """Fundamental model serving as the foundation for all other models."""
     def __init__(self, *args, **kwargs):
-        """The process of initializing or setting up the BaseModel class."""
+        """Creating an instance of the BaseModel class."""
         if not kwargs:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
@@ -34,7 +34,7 @@ class BaseModel():
         models.storage.save()
 
     def to_dict(self):
-        """Provide a dictionary representing the class."""
+        """Provide a dictionary containing the class's attributes."""
         data_dict = self.__dict__.copy()
         data_dict['created_at'] = data_dict['created_at'].isoformat()
         data_dict['updated_at'] = data_dict['updated_at'].isoformat()
