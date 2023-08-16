@@ -24,7 +24,6 @@ python3 (3.4.3)
 |[quit/ EOF](./console.py)| Exit the program |
 
 ###### Example No.1
-
 ```
 ➜  AirBnB_clone git:(feature) ✗ ./console.py
 (hbnb) create User
